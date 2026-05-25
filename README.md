@@ -8,7 +8,7 @@ Projet d’Intelligence Artificielle appliqué à l’analyse du gaspillage alim
 
 Le gaspillage alimentaire représente aujourd’hui un enjeu économique, environnemental et social majeur dans le monde.
 
-Chaque année, des tonnes de nourriture sont perdues ou gaspillées dans les foyers, les commerces et les services alimentaires, alors même que certaines populations souffrent encore de malnutrition.
+Chaque année, des tonnes de nourriture sont perdues ou gaspillées dans les foyers, les commerces et les services alimentaires.
 
 Grâce à la Data Science et à l’Intelligence Artificielle, il est possible d’analyser les données liées au gaspillage alimentaire afin de mieux comprendre :
 - les tendances du gaspillage ;
