@@ -2,18 +2,18 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# -----------------------------
+
 # CONFIGURATION GLOBALE
-# -----------------------------
+
 st.set_page_config(
     page_title="Food Waste Analytics",
     page_icon="🌍",
     layout="wide"
 )
 
-# -----------------------------
+
 # CSS CUSTOM — DESIGN PREMIUM
-# -----------------------------
+
 st.markdown("""
 <style>
 
@@ -61,9 +61,9 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
-# -----------------------------
+
 # TITRE
-# -----------------------------
+
 st.markdown(
     "<h1 style='text-align:center; color:white;'>🌍 Food Waste Analytics Dashboard</h1>",
     unsafe_allow_html=True
@@ -74,14 +74,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# -----------------------------
+
 # CHARGEMENT DES DONNÉES
-# -----------------------------
+
 df = pd.read_csv("data/clean/FoodWasteAI_clean.csv")
 
-# -----------------------------
+
 # SIDEBAR
-# -----------------------------
+
 st.sidebar.markdown("## 🔍 Filtres")
 regions = ["Toutes les régions"] + sorted(df["region"].unique().tolist())
 selected_region = st.sidebar.selectbox("🌎 Choisir une région", regions)
@@ -91,9 +91,9 @@ if selected_region != "Toutes les régions":
 else:
     df_filtered = df
 
-# -----------------------------
+
 # INDICATEURS CLÉS
-# -----------------------------
+
 st.markdown("### 📌 Indicateurs clés")
 
 col1, col2, col3 = st.columns(3)
@@ -116,9 +116,9 @@ with col3:
     st.markdown(f"<div class='metric-value'>{df_filtered['country'].nunique()}</div>", unsafe_allow_html=True)
     st.markdown("</div>", unsafe_allow_html=True)
 
-# -----------------------------
+
 # TOP 10 PAYS
-# -----------------------------
+
 st.markdown("### 🏆 Top 10 des pays les plus concernés")
 
 top10 = df_filtered.sort_values(
@@ -137,9 +137,9 @@ fig_top10 = px.bar(
 
 st.plotly_chart(fig_top10, use_container_width=True)
 
-# -----------------------------
+
 # GASPILLAGE PAR RÉGION
-# -----------------------------
+
 st.markdown("### 🌍 Gaspillage moyen par région")
 
 region_mean = (
@@ -160,8 +160,8 @@ fig_region = px.bar(
 
 st.plotly_chart(fig_region, use_container_width=True)
 
-# -----------------------------
+
 # TABLEAU DES DONNÉES
-# -----------------------------
+
 st.markdown("### 🔎 Données filtrées")
 st.dataframe(df_filtered, use_container_width=True)
