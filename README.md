@@ -172,7 +172,7 @@ food-waste-ai/
 
 ---
 
-# 📋 Résultats principaux
+#  Résultats principaux
 
 Les analyses réalisées montrent :
 
@@ -183,7 +183,7 @@ Les analyses réalisées montrent :
 
 ---
 
-# 🔮 Perspectives
+# Perspectives
 
 Les prochaines améliorations prévues sont :
 
@@ -195,7 +195,7 @@ Les prochaines améliorations prévues sont :
 
 ---
 
-# 🎓 Compétences développées
+# Compétences développées
 
 À travers ce projet, j'ai renforcé mes compétences en :
 
@@ -210,7 +210,7 @@ Les prochaines améliorations prévues sont :
 
 ---
 
-# 👩🏽‍💻 Auteur
+# Auteur
 
 **Barakissa Koné**
 
