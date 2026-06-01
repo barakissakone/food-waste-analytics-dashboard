@@ -1,114 +1,145 @@
-# Food Waste AI
+# Food Waste Analytics Dashboard
 
-Projet d’Intelligence Artificielle appliqué à l’analyse du gaspillage alimentaire grâce à la Data Science et à la Vision par Ordinateur.
+Projet de Data Analytics appliqué à l’analyse du gaspillage alimentaire mondial à partir des données du Programme des Nations Unies pour l’Environnement (UNEP).
+
+---
+
+#  Contexte
+
+Le gaspillage alimentaire représente un enjeu majeur à l'échelle mondiale.
+
+Chaque année, des millions de tonnes de nourriture sont perdues ou gaspillées dans les ménages, les commerces et les services alimentaires. Ces pertes ont des impacts importants sur :
+
+* l'économie ;
+* l'environnement ;
+* la sécurité alimentaire ;
+* la gestion des ressources naturelles.
+
+L'analyse des données permet de mieux comprendre ce phénomène et d'identifier les zones où des actions de réduction du gaspillage sont nécessaires.
 
 ---
 
 # Problématique
 
-Le gaspillage alimentaire représente aujourd’hui un enjeu économique, environnemental et social majeur dans le monde.
+Comment exploiter les données du gaspillage alimentaire mondial afin de :
 
-Chaque année, des tonnes de nourriture sont perdues ou gaspillées dans les foyers, les commerces et les services alimentaires.
-
-Grâce à la Data Science et à l’Intelligence Artificielle, il est possible d’analyser les données liées au gaspillage alimentaire afin de mieux comprendre :
-- les tendances du gaspillage ;
-- les pertes alimentaires par pays ;
-- les impacts économiques ;
-- les catégories d’aliments les plus gaspillées.
-
-Ce projet vise donc à explorer comment les technologies de l’IA peuvent aider à analyser, visualiser et mieux comprendre le gaspillage alimentaire mondial.
+* identifier les pays les plus touchés ;
+* comparer les régions du monde ;
+* analyser les principales sources de gaspillage ;
+* produire des indicateurs pertinents ;
+* faciliter la prise de décision grâce à la visualisation des données ?
 
 ---
 
 # Dataset utilisé
 
-## Food Waste Dataset
+## UNEP Food Waste Index Dataset
 
-Dataset utilisé :
-Food Waste — Kaggle
+Source : Programme des Nations Unies pour l’Environnement (UNEP)
 
-Ce dataset contient des informations sur :
-- le gaspillage alimentaire mondial ;
-- les déchets alimentaires domestiques ;
-- les pertes dans les commerces ;
-- les pertes dans les services alimentaires ;
-- les estimations par pays ;
-- différents indicateurs liés au gaspillage alimentaire.
+Le dataset contient notamment :
 
-Le dataset sera utilisé pour :
-- l’analyse de données ;
-- les statistiques descriptives ;
-- les visualisations ;
-- le dashboard interactif ;
-- les futures expérimentations IA.
+* les estimations du gaspillage alimentaire total par habitant ;
+* les estimations du gaspillage des ménages ;
+* les estimations du gaspillage dans les commerces ;
+* les estimations du gaspillage dans les services alimentaires ;
+* les régions géographiques ;
+* le niveau de confiance des estimations.
 
 ---
 
-# Objectifs du projet
+#  Objectifs du projet
 
-Ce projet a pour objectif de :
+Les objectifs principaux de ce projet sont :
 
-- analyser les données liées au gaspillage alimentaire ;
-- comprendre les tendances du gaspillage mondial ;
-- créer des visualisations interactives ;
-- développer un dashboard de suivi ;
-- pratiquer la Data Science sur un cas concret ;
-- améliorer mes compétences en IA et analyse de données.
+* collecter et préparer les données ;
+* nettoyer et transformer les données ;
+* réaliser une analyse exploratoire (EDA) ;
+* identifier les principaux indicateurs du gaspillage alimentaire ;
+* créer des visualisations pertinentes ;
+* développer un dashboard interactif avec Streamlit ;
+* produire des analyses exploitables pour la compréhension du phénomène.
 
 ---
 
-# Compétences travaillées
+#  Analyses réalisées
 
-## Data Science
-- Nettoyage de données
-- Analyse exploratoire
-- Visualisation de données
-- Statistiques descriptives
-- Manipulation de datasets
+## Nettoyage des données
 
-## Intelligence Artificielle
-- Analyse de données
-- Machine Learning
-- Préparation de données
-- Exploration IA
+* Vérification des valeurs manquantes
+* Suppression des doublons
+* Vérification des types de données
+* Contrôle de la qualité des données
 
-## Développement
-- Python
-- Streamlit
-- Git & GitHub
-- Organisation de projet
+## Analyse exploratoire (EDA)
+
+* Top 10 des pays les plus gaspilleurs
+* Analyse du gaspillage par région
+* Distribution des variables numériques
+* Analyse des corrélations
+* Comparaison des différentes sources de gaspillage alimentaire
+
+## Analyse métier
+
+* Identification des régions les plus concernées
+* Comparaison entre ménages, commerces et services alimentaires
+* Mise en évidence des disparités entre pays
+* Analyse des indicateurs clés du gaspillage alimentaire
+
+---
+
+#  KPI suivis
+
+Le projet met en avant plusieurs indicateurs clés :
+
+* Gaspillage alimentaire moyen par habitant
+* Top pays les plus gaspilleurs
+* Répartition du gaspillage par région
+* Contribution des ménages au gaspillage total
+* Contribution des commerces au gaspillage total
+* Contribution des services alimentaires au gaspillage total
+
+---
+
+# Dashboard Streamlit
+
+Le dashboard permet :
+
+* d'explorer les données de manière interactive ;
+* de filtrer les résultats par région ;
+* de visualiser les principaux indicateurs ;
+* de comparer les pays ;
+* d'analyser les différentes sources de gaspillage alimentaire.
 
 ---
 
 # Technologies utilisées
 
-## Data Science
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Scikit-learn
-- Jupyter Notebook
+## Analyse de données
 
-## Intelligence Artificielle
-- OpenCV
-- YOLOv8
-- Label Studio
+* Python
+* Pandas
+* NumPy
 
-## Dashboard & Applications
-- Streamlit
-- FastAPI
+## Visualisation
 
-## Génération de rapports
-- ReportLab
-- FPDF
+* Matplotlib
+* Seaborn
+* Plotly
 
-## Outils
-- VS Code
-- GitHub
-- Kaggle
+## Dashboard
+
+* Streamlit
+
+## Notebooks
+
+* Jupyter Notebook
+
+## Développement
+
+* Git
+* GitHub
+* VS Code
 
 ---
 
@@ -117,56 +148,72 @@ Ce projet a pour objectif de :
 ```bash
 food-waste-ai/
 │
-├── data/                 # Données du projet
-├── notebooks/            # Analyses et expérimentations
-├── images/               # Images utilisées
-├── models/               # Modèles IA
-├── app/                  # Dashboard Streamlit
-├── reports/              # Rapports PDF
-├── api/                  # API FastAPI
+├── data/
+│   ├── raw/
+│   └── clean/
+│
+├── notebooks/
+│   ├── 01_acquisition_des_donnees.ipynb
+│   ├── 02_nettoyage_des_donnees.ipynb
+│   ├── 03_visualisation.ipynb
+│   └── 04_EDA.ipynb
+│
+├── app/
+│   └── dashboard_streamlit.py
+│
+├── reports/
+│
+├── images/
+│
 ├── README.md
+│
 └── requirements.txt
 ```
 
 ---
 
-# Fonctionnalités prévues
+# 📋 Résultats principaux
 
-- Analyse du gaspillage alimentaire
-- Nettoyage et traitement des données
-- Création de graphiques et statistiques
-- Dashboard interactif
-- Analyse exploratoire de données
-- Génération de rapports PDF
+Les analyses réalisées montrent :
 
----
-
-# Évolution du projet
-
-Le projet évoluera progressivement avec :
-- l’amélioration des analyses ;
-- l’ajout de nouvelles visualisations ;
-- des prédictions basées sur les données ;
-- une interface utilisateur plus avancée ;
-- l’intégration de fonctionnalités IA supplémentaires.
+* une forte disparité du gaspillage alimentaire entre les pays ;
+* des différences importantes entre les régions du monde ;
+* une contribution significative du gaspillage domestique au gaspillage total ;
+* plusieurs régions nécessitant une attention particulière dans les politiques de réduction du gaspillage.
 
 ---
 
-# Objectifs d’apprentissage
+# 🔮 Perspectives
 
-Ce projet me permet de pratiquer :
-- l’analyse de données ;
-- la visualisation de données ;
-- le Machine Learning ;
-- le développement d’applications IA ;
-- l’organisation de projets GitHub ;
-- la création de dashboards interactifs.
+Les prochaines améliorations prévues sont :
+
+* enrichissement du dashboard ;
+* ajout de filtres avancés ;
+* intégration de nouvelles visualisations interactives ;
+* comparaison entre plusieurs sources de données ;
+* génération automatique de rapports analytiques.
 
 ---
 
-# Auteur
+# 🎓 Compétences développées
 
-Barakissa Koné  
-Étudiante en Master Big Data & IA
+À travers ce projet, j'ai renforcé mes compétences en :
 
-Passionnée par la data, l’IA, le développement et l’élevage intelligent.
+* Data Cleaning
+* Analyse Exploratoire des Données (EDA)
+* Data Visualization
+* KPI & Reporting
+* Dashboarding avec Streamlit
+* Manipulation de données avec Pandas
+* Analyse de données décisionnelle
+* Gestion de projet Data avec Git et GitHub
+
+---
+
+# 👩🏽‍💻 Auteur
+
+**Barakissa Koné**
+
+Étudiante en Master Big Data & Intelligence Artificielle.
+
+Passionnée par la Data Science, l'analyse de données et l'utilisation des technologies numériques pour résoudre des problématiques concrètes à impact social et environnemental.
